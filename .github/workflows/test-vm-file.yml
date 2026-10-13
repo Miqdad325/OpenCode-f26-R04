@@ -5,7 +5,7 @@ on:
 
 jobs:
   test-ssh:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Create test file on VM
