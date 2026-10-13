@@ -14,8 +14,9 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_ADMIN }}
           password: ${{ secrets.ADMIN_PASSWORD }}
+          debug: true
           script: |
-            set -e
+            set -ex
             cd "$HOME/OpenCode-f26-R04"
             printf 'hello\n' > github.log
             echo "File created at: $(pwd)/github.log"
